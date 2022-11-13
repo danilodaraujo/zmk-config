@@ -8,6 +8,17 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        option_backspace: option_backspace {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp LEFT_ALT &kp BACKSPACE>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -49,10 +60,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
- &trans     &none       &kp PIPE   &kp PERCENT      &none      &kp CAPSLOCK  &kp TILDE     &kp BACKSLASH          &kp SLASH        &kp LEFT_BRACE        &kp RIGHT_BRACE  &trans
- &trans    &kp AT   &kp LEFT_ALT      &kp EXCL  &kp SPACE        &caps_word      &none     &kp BACKSPACE         &kp DELETE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
- &trans  &kp HASH  &kp AMPERSAND  &kp QUESTION      &none  &kp LEFT_COMMAND  &kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &trans
-                                      &kp LGUI      &mo 3         &kp SPACE    &kp RET            &trans           &kp RALT
+ &trans     &none       &kp PIPE   &kp PERCENT      &none      &kp CAPSLOCK          &kp TILDE     &kp BACKSLASH          &kp SLASH        &kp LEFT_BRACE        &kp RIGHT_BRACE  &trans
+ &trans    &kp AT   &kp LEFT_ALT      &kp EXCL  &kp SPACE        &caps_word  &option_backspace     &kp BACKSPACE         &kp DELETE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+ &trans  &kp HASH  &kp AMPERSAND  &kp QUESTION      &none  &kp LEFT_COMMAND          &kp GRAVE  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &trans
+                                        &trans      &mo 3            &trans             &trans            &trans             &trans
             >;
         };
 
