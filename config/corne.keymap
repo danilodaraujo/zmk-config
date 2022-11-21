@@ -51,6 +51,24 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_COMMAND &kp ENTER>;
         };
+        com_grave: com_grave {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp GRAVE>;
+        };
+        opt_com_rarrow: opt_com_rarrow {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp LEFT_COMMAND &kp RIGHT_ARROW>;
+        };
+        mc_1: mc_1 {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_COMMAND &kp LSHIFT &kp F1>;
+        };
     };
 
     keymap {
@@ -103,19 +121,19 @@
 
         Nav {
             bindings = <
-  &none         &com_tab  &kp LEFT_CONTROL      &opt_lctrl    &opt_com_lctrl      &trans        &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP          &kp END  &trans   &none
-  &none  &opt_com_larrow      &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &com_enter  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans   &none
-  &none            &none             &none           &none             &none     &kp TAB       &kp SPACE          &trans        &trans           &trans  &trans   &none
+  &none         &com_tab  &kp LEFT_CONTROL      &opt_lctrl    &opt_com_lctrl  &opt_cmd_f        &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP          &kp END       &com_grave   &none
+  &none  &opt_com_larrow      &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_COMMAND  &com_enter  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &opt_com_rarrow   &none
+  &none            &none             &none           &none             &none     &kp TAB       &kp SPACE           &mc_1        &trans           &trans           &trans   &none
                                                     &trans            &trans      &trans          &trans          &trans        &trans
             >;
         };
 
         Extra {
             bindings = <
-  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &none
-  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &none
-  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &none
-                         &trans  &trans  &trans  &trans  &trans  &trans
+  &none      &kp F1      &kp F2  &kp F3  &kp F4             &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10   &none
+  &none  &kp C_PLAY  &kp C_MUTE   &none   &none       &kp C_VOL_UP   &none   &none   &none   &none    &none   &none
+  &none       &none       &none   &none   &none  &kp C_VOLUME_DOWN   &none   &none   &none   &none    &none   &none
+                                 &trans  &trans             &trans  &trans  &trans  &trans
             >;
         };
     };
