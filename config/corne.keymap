@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 
 / {
     macros {
@@ -141,7 +142,7 @@
         default_layer {
             bindings = <
   &none   &kp Q   &kp W           &kp E        &kp R   &kp T             &kp Y        &kp U             &kp I    &kp O    &kp P      &none
-  &none   &kp A   &kp S           &kp D        &kp F   &kp G             &kp H        &kp J             &kp K    &kp L  &bt BT_CLR   &none
+  &none   &kp A   &kp S           &kp D        &kp F   &kp G             &kp H        &kp J             &kp K    &kp L  &kp ESC      &none
   &none   &kp Z   &kp X           &kp C        &kp V   &kp B             &kp N        &kp M         &kp COMMA  &kp DOT  &kp TAB      &none
                          &kp LEFT_SHIFT  &lt 1 ENTER   &mo 4  &kp LEFT_CONTROL  &lt 2 SPACE  &kp LEFT_COMMAND
             >;
@@ -177,7 +178,7 @@
         Extra {
             bindings = <
   &none      &kp F1      &kp F2  &kp F3  &kp F4             &kp F5   &kp F6     &kp F7       &kp F8      &kp F9   &kp F10   &none
-  &none  &kp C_PLAY  &kp C_MUTE   &none   &none       &kp C_VOL_UP   &none      &none        &none        &none     &none   &none
+  &none  &kp C_PLAY  &kp C_MUTE   &none   &none       &kp C_VOL_UP   &bt BT_CLR &bt BT_NXT   &none        &none     &none   &none
   &none       &none       &none   &none   &none  &kp C_VOLUME_DOWN   &none      &none        &none        &none     &none   &none
                                  &trans  &trans             &trans  &trans  &trans  &trans
             >;
