@@ -11,107 +11,91 @@
     macros {
         option_backspace: option_backspace {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "option_backspace";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp BACKSPACE>,
-                <&macro_release>;
+                <&macro_press &kp LEFT_ALT>,
+                <&macro_tap &kp BACKSPACE>,
+                <&macro_release &kp LEFT_ALT>;
         };
         com_tab: com_tab {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "com_tab";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LEFT_COMMAND>,
-                <&macro_tap>,
-                <&kp TAB>,
-                <&macro_release>;
+                <&macro_press &kp LEFT_COMMAND>,
+                <&macro_tap &kp TAB>,
+                <&macro_release &kp LEFT_COMMAND>;
         };
         opt_lctrl: opt_lctrl {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "opt_lctrl";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LEFT_CONTROL &kp LEFT_ALT>;
+                <&macro_press &kp LEFT_CONTROL &kp LEFT_ALT>,
+		<&macro_release &kp LEFT_CONTROL &kp LEFT_ALT>;
         };
         opt_com_lctrl: opt_com_lctrl {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "opt_com_lctrl";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT &kp LEFT_COMMAND &kp LEFT_CONTROL>;
+                <&macro_press &kp LEFT_ALT &kp LEFT_COMMAND &kp LEFT_CONTROL>,
+                <&macro_release &kp LEFT_ALT &kp LEFT_COMMAND &kp LEFT_CONTROL>;
         };
         opt_cmd_f: opt_cmd_f {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "opt_cmd_f";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT &kp LEFT_COMMAND>,
-                <&macro_tap>,
-                <&kp F>,
-                <&macro_release>;
+                <&macro_press &kp LEFT_ALT &kp LEFT_COMMAND>,
+                <&macro_tap &kp F>,
+                <&macro_release &kp LEFT_ALT &kp LEFT_COMMAND>;
         };
         opt_com_larrow: opt_com_larrow {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "opt_com_larrow";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT &kp LEFT_COMMAND>,
-                <&macro_tap>,
-                <&kp LEFT_ARROW>,
-                <&macro_release>;
+                <&macro_press &kp LEFT_ALT &kp LEFT_COMMAND>,
+                <&macro_tap &kp LEFT_ARROW>,
+                <&macro_release &kp LEFT_ALT &kp LEFT_COMMAND>;
         };
         com_enter: com_enter {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "com_enter";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LEFT_COMMAND>,
-                <&macro_tap>,
-                <&kp ENTER>,
-                <&macro_release>;
+                <&macro_press &kp LEFT_COMMAND>,
+                <&macro_tap &kp ENTER>,
+                <&macro_release &kp LEFT_COMMAND>;
         };
         com_grave: com_grave {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "com_grave";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LEFT_COMMAND>,
-                <&macro_tap>,
-                <&kp GRAVE>,
-                <&macro_release>;
+                <&macro_press &kp LEFT_COMMAND>,
+                <&macro_tap &kp GRAVE>,
+                <&macro_release &kp LEFT_COMMAND>;
         };
         opt_com_rarrow: opt_com_rarrow {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "opt_com_rarrow";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LEFT_ALT &kp LEFT_COMMAND>,
-                <&macro_tap>,
-                <&kp RIGHT_ARROW>,
-                <&macro_release>;
+                <&macro_press &kp LEFT_ALT &kp LEFT_COMMAND>,
+                <&macro_tap &kp RIGHT_ARROW>,
+                <&macro_release &kp LEFT_ALT &kp LEFT_COMMAND>;
         };
         mc_1: mc_1 {
             compatible = "zmk,behavior-macro";
-            label = "new_macro";
+            label = "mc_1";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_COMMAND &kp LSHIFT>,
-                <&macro_tap>,
-                <&kp F1>,
-                <&macro_release>;
+                <&macro_press &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_COMMAND &kp LSHIFT>,
+                <&macro_tap &kp F1>,
+                <&macro_release &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_COMMAND &kp LSHIFT>;
         };
     };
 
