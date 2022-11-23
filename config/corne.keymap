@@ -20,7 +20,16 @@
                 <&macro_tap &kp BACKSPACE>,
                 <&macro_release &kp LEFT_ALT>;
         };
-        com_tab: com_tab {
+        option_delete: option_delete {
+            compatible = "zmk,behavior-macro";
+            label = "option_delete";
+            #binding-cells = <0>;
+	    wait-ms = <1>;
+            bindings =
+                <&macro_press &kp LEFT_ALT>,
+                <&macro_tap &kp DELETE>,
+                <&macro_release &kp LEFT_ALT>;
+        };com_tab: com_tab {
             compatible = "zmk,behavior-macro";
             label = "com_tab";
             #binding-cells = <0>;
@@ -147,7 +156,21 @@
             bindings = <&kp ESC>;
             key-positions = <19 20>;
         };
-    };
+	
+	tab {
+            bindings = <&kp TAB>;
+            key-positions = <16 17>;
+        };
+	
+	opt_backspace{
+            bindings = <&option_backspace>;
+            key-positions = <14 15>;
+        };
+ 	
+	opt_delete{
+            bindings = <&option_delete>;
+            key-positions = <21 22>;
+        };   };
 
     keymap {
         compatible = "zmk,keymap";
