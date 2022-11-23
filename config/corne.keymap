@@ -163,7 +163,7 @@
 
         lower_layer {
             bindings = <
-  &none      &kp CARET   &kp LESS_THAN  &kp GREATER_THAN    &kp DOLLAR   &none  &kp BACKSPACE &kp NUMBER_7 &kp N8        &kp N9       &none     &none
+  &none      &kp CARET        &kp none          &kp none    &kp DOLLAR   &none  &kp BACKSPACE &kp NUMBER_7 &kp N8        &kp N9       &none     &none
   &none      &kp COLON       &kp MINUS          &kp PLUS     &kp SPACE   &none  &kp SPACE     &kp NUMBER_4 &kp NUMBER_5  &kp NUMBER_6 &kp DOT   &none
   &none  &kp SEMICOLON  &kp UNDERSCORE         &kp EQUAL  &kp ASTERISK   &none  &kp NUMBER_0  &kp NUMBER_1 &kp NUMBER_2  &kp NUMBER_3 &kp COMMA &none
                                                   &trans        &trans  &trans  &trans        &mo 3        &trans
@@ -174,7 +174,7 @@
             bindings = <
  &trans     &none       &kp PIPE   &kp PERCENT      &none      &kp CAPSLOCK &kp TILDE         &kp BACKSLASH    &kp SLASH         &kp LEFT_BRACE        &kp RIGHT_BRACE       &trans
  &trans    &kp AT   &kp LEFT_ALT      &kp EXCL  &kp SPACE        &caps_word &option_backspace &kp BACKSPACE    &kp DELETE        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS &trans
- &trans  &kp HASH  &kp AMPERSAND  &kp QUESTION      &none  &kp LEFT_COMMAND &kp GRAVE         &kp SINGLE_QUOTE &kp DOUBLE_QUOTES &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &trans
+ &trans  &kp HASH  &kp AMPERSAND  &kp QUESTION      &none  &kp LEFT_COMMAND &kp GRAVE         &kp none         &kp none          &kp LEFT_BRACKET      &kp RIGHT_BRACKET     &trans
                                         &trans      &mo 3            &trans &trans            &trans           &trans
             >;
         };
