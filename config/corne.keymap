@@ -179,28 +179,28 @@
 
         base_layer {
             bindings = <
-  &none &kp W           &kp L            &kp R          &kp B            &kp Z            &kp Q              &kp U          &kp D         &kp J                &none                 &none
+  &none &kp W           &kp L            &kp R          &kp B            &kp Z            &kp Q              &kp U          &kp D         &kp J                &kp MINUS             &none
   &none &kp S           &kp H            &kp N          &kp T            &kp COMMA        &kp DOT            &kp A          &kp E         &kp O                &kp I                 &none
   &none &kp F           &kp M            &kp V          &kp C            &kp SINGLE_QUOTE &kp G              &kp P          &kp X         &kp K                &kp Y                 &none
-                        &kp LEFT_SHIFT   &lt 1 ENTER    &mo 4            &kp LEFT_CONTROL &lt 2 SPACE        &kp LEFT_COMMAND
+                                         &kp LEFT_SHIFT &lt 1 ENTER      &mo 4            &kp LEFT_CONTROL   &lt 2 SPACE    &kp LEFT_COMMAND
             >;
         };
 
         symbols_1 {
             bindings = <
-  &none &kp CARET       &none            &none          &kp DOLLAR       &none             &kp BACKSPACE     &kp NUMBER_7   &kp N8        &kp N9               &none                 &none
-  &none &kp COLON       &kp MINUS        &kp PLUS       &kp SPACE        &none             &kp SPACE         &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6         &kp DOT               &none
-  &none &kp SEMICOLON   &kp UNDERSCORE   &kp EQUAL      &kp ASTERISK     &none             &kp NUMBER_0      &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3         &kp COMMA             &none
+  &none &kp CARET       &none            &none          &kp DOLLAR       &none             &kp BACKSPACE     &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9         &none                 &none
+  &none &kp COLON       &kp ASTERISK     &kp PLUS       &kp EQUAL        &none             &kp SPACE         &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6         &kp DOT               &none
+  &none &kp SEMICOLON   &none            &none          &none            &none             &kp NUMBER_0      &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3         &kp COMMA             &none
                                          &trans         &trans           &trans            &trans            &mo 3          &trans
             >;
         };
 
         symbols_2 {
             bindings = <
- &none &none            &kp PIPE         &kp PERCENT    &none            &kp CAPSLOCK      &kp TILDE         &kp BACKSLASH  &kp SLASH     &kp LEFT_BRACE       &kp RIGHT_BRACE       &none
- &none &kp AT           &kp LEFT_ALT     &kp EXCL       &kp SPACE        &caps_word        &none             &kp BACKSPACE  &kp DELETE    &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &none
- &none &kp HASH         &kp AMPERSAND    &kp QUESTION   &none            &kp LEFT_COMMAND  &kp GRAVE         &none          &none         &kp LEFT_BRACKET     &kp RIGHT_BRACKET     &none
-                                         &trans         &mo 3            &trans &trans     &trans            &trans
+ &none &none            &kp PIPE         &kp PERCENT    &kp CAPSLOCK     &none             &kp TILDE         &kp BACKSLASH  &kp SLASH     &kp LEFT_BRACE       &kp RIGHT_BRACE       &none
+ &none &kp AT           &none            &kp EXCL       &caps_word       &none             &none             &kp BACKSPACE  &kp DELETE    &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &none
+ &none &kp HASH         &kp AMPERSAND    &kp QUESTION   &none            &none             &kp GRAVE         &none          &none         &kp LEFT_BRACKET     &kp RIGHT_BRACKET     &none
+                                         &trans         &mo 3            &trans            &trans            &trans         &trans
             >;
         };
 
