@@ -20,6 +20,7 @@
                 <&macro_tap &kp BACKSPACE>,
                 <&macro_release &kp LEFT_ALT>;
         };
+
         option_delete: option_delete {
             compatible = "zmk,behavior-macro";
             label = "option_delete";
@@ -29,7 +30,31 @@
                 <&macro_press &kp LEFT_ALT>,
                 <&macro_tap &kp DELETE>,
                 <&macro_release &kp LEFT_ALT>;
-        };com_tab: com_tab {
+        };
+
+	command_backspace: command_backspace{
+            compatible = "zmk,behavior-macro";
+            label = "command_backspace";
+            #binding-cells = <0>;
+	    wait-ms = <1>;
+            bindings =
+                <&macro_press &kp LEFT_COMMAND>,
+                <&macro_tap &kp BACKSPACE>,
+                <&macro_release &kp LEFT_COMMAND>;
+        };
+
+	command_delete: command_delete{
+            compatible = "zmk,behavior-macro";
+            label = "command_delete";
+            #binding-cells = <0>;
+	    wait-ms = <1>;
+            bindings =
+                <&macro_press &kp LEFT_COMMAND>,
+                <&macro_tap &kp DELETE>,
+                <&macro_release &kp LEFT_COMMAND>;
+        };
+
+	com_tab: com_tab {
             compatible = "zmk,behavior-macro";
             label = "com_tab";
             #binding-cells = <0>;
@@ -39,6 +64,7 @@
                 <&macro_tap &kp TAB>,
                 <&macro_release &kp LEFT_COMMAND>;
         };
+
         opt_lctrl: opt_lctrl {
             compatible = "zmk,behavior-macro";
             label = "opt_lctrl";
@@ -48,6 +74,7 @@
 		<&macro_pause_for_release>,
 		<&macro_release &kp LEFT_CONTROL &kp LEFT_ALT>;
         };
+
         opt_com_lctrl: opt_com_lctrl {
             compatible = "zmk,behavior-macro";
             label = "opt_com_lctrl";
@@ -57,6 +84,7 @@
 		<&macro_pause_for_release>,	
                 <&macro_release &kp LEFT_ALT &kp LEFT_COMMAND &kp LEFT_CONTROL>;
         };
+
         opt_cmd_f: opt_cmd_f {
             compatible = "zmk,behavior-macro";
             label = "opt_cmd_f";
@@ -67,6 +95,7 @@
                 <&macro_tap &kp F>,
                 <&macro_release &kp LEFT_ALT &kp LEFT_COMMAND>;
         };
+
         opt_com_larrow: opt_com_larrow {
             compatible = "zmk,behavior-macro";
             label = "opt_com_larrow";
@@ -77,6 +106,7 @@
                 <&macro_tap &kp LEFT_ARROW>,
                 <&macro_release &kp LEFT_ALT &kp LEFT_COMMAND>;
         };
+
         com_enter: com_enter {
             compatible = "zmk,behavior-macro";
             label = "com_enter";
@@ -87,6 +117,7 @@
                 <&macro_tap &kp ENTER>,
                 <&macro_release &kp LEFT_COMMAND>;
         };
+
         com_grave: com_grave {
             compatible = "zmk,behavior-macro";
             label = "com_grave";
@@ -97,6 +128,7 @@
                 <&macro_tap &kp GRAVE>,
                 <&macro_release &kp LEFT_COMMAND>;
         };
+
         opt_com_rarrow: opt_com_rarrow {
             compatible = "zmk,behavior-macro";
             label = "opt_com_rarrow";
@@ -107,6 +139,7 @@
                 <&macro_tap &kp RIGHT_ARROW>,
                 <&macro_release &kp LEFT_ALT &kp LEFT_COMMAND>;
         };
+
         mc_1: mc_1 {
             compatible = "zmk,behavior-macro";
             label = "mc_1";
@@ -117,6 +150,7 @@
                 <&macro_tap &kp F1>,
                 <&macro_release &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_COMMAND &kp LSHIFT>;
         };
+
 	mc_2: mc_2 {
             compatible = "zmk,behavior-macro";
             label = "mc_2";
@@ -127,6 +161,7 @@
                 <&macro_tap &kp F2>,
                 <&macro_release &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_COMMAND &kp LSHIFT>;
         };
+
 	mc_3: mc_3 {
             compatible = "zmk,behavior-macro";
             label = "mc_3";
@@ -137,6 +172,7 @@
                 <&macro_tap &kp F3>,
                 <&macro_release &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_COMMAND &kp LSHIFT>;
         };
+
 	mc_4: mc_4 {
             compatible = "zmk,behavior-macro";
             label = "mc_4";
@@ -152,7 +188,37 @@
     combos {
         compatible = "zmk,combos";
 
-        escape {
+	left_parenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <2 3 4 5>;
+        };
+	
+	right_parenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <8 9 10 11>;
+        };
+	
+	left_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <24 25 26 27>;
+        };
+	
+	right_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <30 31 32 33>;
+        };
+	
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <2 3 4>;
+        };
+	
+	semicolon {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <24 25 26>;
+        };
+	
+	escape {
             bindings = <&kp ESC>;
             key-positions = <19 20>;
         };
@@ -170,6 +236,16 @@
 	opt_delete{
             bindings = <&option_delete>;
             key-positions = <21 22>;
+        };
+
+	cmd_backspace{
+            bindings = <&command_backspace>;
+            key-positions = <13 14 15 16>;
+        };   
+
+	cmd_delete{
+            bindings = <&command_delete>;
+            key-positions = <19 20 21 22>;
         };   
 
     };
@@ -206,9 +282,9 @@
 
         navigation_3 {
             bindings = <
-  &none &com_tab        &kp LEFT_CONTROL &opt_lctrl     &opt_com_lctrl   &opt_cmd_f        &kp HOME          &kp PAGE_UP    &kp PAGE_DOWN &kp END              &com_grave            &none
+  &none &com_tab        &none            &opt_lctrl     &opt_com_lctrl   &opt_cmd_f        &kp HOME          &kp PAGE_UP    &kp PAGE_DOWN &kp END              &com_grave            &none
   &none &opt_com_larrow &kp LEFT_ALT     &kp LEFT_SHIFT &kp LEFT_COMMAND &com_enter        &kp LEFT_ARROW    &kp DOWN_ARROW &kp UP_ARROW  &kp RIGHT_ARROW      &opt_com_rarrow       &none
-  &none &none           &none            &none          &none            &none             &kp SPACE         &mc_1          &mc_2	  &mc_3                &mc_4                 &none
+  &none &none           &none            &none          &none            &none             &none             &mc_1          &mc_2	  &mc_3                &mc_4                 &none
                                          &trans         &trans           &trans            &trans            &trans         &trans
             >;
         };
