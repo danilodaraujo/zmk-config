@@ -190,52 +190,52 @@
 
 	left_parenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <13 14 15 16>;
+            key-positions = <14 15 16>;
         };
 	
 	right_parenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <19 20 21 22>;
+            key-positions = <19 20 21>;
         };
 	
 	left_bracket {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <25 26 27 28>;
+            key-positions = <26 27 28>;
         };
 	
 	right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <31 32 33 34>;
+            key-positions = <31 32 33>;
         };
 
 	plus {
             bindings = <&kp PLUS>;
-            key-positions = <31 32 33>;
+            key-positions = <32 33 34>;
         };
 	
 	equal {
             bindings = <&kp EQUAL>;
-            key-positions = <7 8 9>;
+            key-positions = <20 21 22>;
         };
 
  	minus {
             bindings = <&kp MINUS>;
-            key-positions = <26 27 28>;
+            key-positions = <25 26 27>;
         };
 	
 	underscore {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <2 3 4>;
+            key-positions = <13 14 15>;
         };
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <1 2 3>;
+            key-positions = <>;
         };
 	
 	semicolon {
             bindings = <&kp SEMICOLON>;
-            key-positions = <25 26 27>;
+            key-positions = <>;
         };
 	
 	escape {
