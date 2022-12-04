@@ -210,32 +210,32 @@
 
 	plus {
             bindings = <&kp PLUS>;
-            key-positions = <32 33 34>;
+            key-positions = <8 9 10>;
         };
 	
 	equal {
             bindings = <&kp EQUAL>;
-            key-positions = <20 21 22>;
+            key-positions = <7 8 9>;
         };
 
  	minus {
             bindings = <&kp MINUS>;
-            key-positions = <25 26 27>;
+            key-positions = <1 2 3>;
         };
 	
 	underscore {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <13 14 15>;
+            key-positions = <2 3 4>;
         };
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <>;
+            key-positions = <20 21 22>;
         };
 	
 	semicolon {
             bindings = <&kp SEMICOLON>;
-            key-positions = <>;
+            key-positions = <13 14 15>;
         };
 	
 	escape {
