@@ -209,12 +209,12 @@
         };
 
 	plus {
-            bindings = <&kp MINUS>;
+            bindings = <&kp PLUS>;
             key-positions = <31 32 33>;
         };
 	
 	equal {
-            bindings = <&kp UNDERSCORE>;
+            bindings = <&kp EQUAL>;
             key-positions = <7 8 9>;
         };
 
