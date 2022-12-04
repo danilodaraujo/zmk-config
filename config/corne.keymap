@@ -190,32 +190,52 @@
 
 	left_parenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <2 3 4 5>;
+            key-positions = <1 2 3 4>;
         };
 	
 	right_parenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <8 9 10 11>;
+            key-positions = <7 8 9 10>;
         };
 	
 	left_bracket {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <24 25 26 27>;
+            key-positions = <25 26 27 28>;
         };
 	
 	right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <30 31 32 33>;
+            key-positions = <31 32 33 34>;
+        };
+
+	plus {
+            bindings = <&kp MINUS>;
+            key-positions = <31 32 33>;
         };
 	
+	equal {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <7 8 9>;
+        };
+
+ 	minus {
+            bindings = <&kp MINUS>;
+            key-positions = <26 27 28>;
+        };
+	
+	underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <2 3 4>;
+        };
+
         colon {
             bindings = <&kp COLON>;
-            key-positions = <2 3 4>;
+            key-positions = <1 2 3>;
         };
 	
 	semicolon {
             bindings = <&kp SEMICOLON>;
-            key-positions = <24 25 26>;
+            key-positions = <25 26 27>;
         };
 	
 	escape {
@@ -255,7 +275,7 @@
 
         base_layer {
             bindings = <
-  &none &kp W           &kp L            &kp R          &kp B            &kp Z            &kp Q              &kp U          &kp D         &kp J                &kp MINUS             &none
+  &none &kp W           &kp L            &kp R          &kp B            &kp Z            &kp Q              &kp U          &kp D         &kp J                &kp BACKSPACE         &none
   &none &kp S           &kp H            &kp N          &kp T            &kp COMMA        &kp DOT            &kp A          &kp E         &kp O                &kp I                 &none
   &none &kp F           &kp M            &kp V          &kp C            &kp SINGLE_QUOTE &kp G              &kp P          &kp X         &kp K                &kp Y                 &none
                                          &kp LEFT_SHIFT &lt 1 ENTER      &mo 4            &kp LEFT_CONTROL   &lt 2 SPACE    &kp LEFT_COMMAND
