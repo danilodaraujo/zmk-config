@@ -9,11 +9,11 @@
 #include <dt-bindings/zmk/mouse.h>
 
 &mmv {
-  time-to-max-speed-ms = <400>;
-  acceleration-exponent = <1>;
+  time-to-max-speed-ms = <200>;
+  acceleration-exponent = <2>;
 };
 
-#define U_MOUSE_MOVE_MAX 1500
+#define U_MOUSE_MOVE_MAX 1700
 
 #undef MOVE_UP
 #undef MOVE_DOWN
