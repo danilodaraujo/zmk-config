@@ -287,7 +287,7 @@
   &none &kp W           &kp L            &kp R          &kp B            &kp Z            &kp Q              &kp U          &kp D         &kp J                &kp BACKSPACE         &none
   &none &kp S           &kp H            &kp N          &kp T            &kp COMMA        &kp DOT            &kp A          &kp E         &kp O                &kp I                 &none
   &none &kp F           &kp M            &kp V          &kp C            &caps_word       &kp G              &kp P          &kp X         &kp K                &kp Y                 &none
-                                         &sk LSHIFT     &lt 1 ENTER      &kp LEFT_ALT     &kp LEFT_CONTROL   &lt 2 SPACE    &kp LEFT_COMMAND
+                                         &sk LSHIFT     &lt 1 ENTER      &kp LEFT_ALT     &kp LEFT_CONTROL   &lt 2 SPACE    &sk LEFT_COMMAND
             >;
         };
 
