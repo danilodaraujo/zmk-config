@@ -14,7 +14,7 @@
   delay-ms = <0>;
 };
 
-#define U_MOUSE_MOVE_MAX 1200
+#define U_MOUSE_MOVE_MAX 1400
 
 #undef MOVE_UP
 #undef MOVE_DOWN
@@ -286,12 +286,12 @@
         };
 
 	backslash{
-            bindings = <&kp backslash>;
+            bindings = <&kp BACKSLASH>;
             key-positions = <13 14 15 16>;
         };   
 
 	slash{
-            bindings = <&kp slash>;
+            bindings = <&kp SLASH>;
             key-positions = <19 20 21 22>;
         };   
 
