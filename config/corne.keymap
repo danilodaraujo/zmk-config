@@ -265,16 +265,6 @@
             key-positions = <13 14 15>;
         };
 	
-	escape {
-            bindings = <&kp ESC>;
-            key-positions = <19 20>;
-        };
-	
-	tab {
-            bindings = <&kp TAB>;
-            key-positions = <15 16>;
-        };
-	
 	opt_backspace{
             bindings = <&option_backspace>;
             key-positions = <13 14>;
@@ -287,11 +277,21 @@
 
 	backslash{
             bindings = <&kp BACKSLASH>;
-            key-positions = <13 14 15 16>;
+            key-positions = <25 26 27 28>;
         };   
 
 	slash{
             bindings = <&kp SLASH>;
+            key-positions = <31 32 33 34>;
+        };   
+
+    exclamation{
+            bindings = <&kp EXCL>;
+            key-positions = <13 14 15 16>;
+        };   
+
+    question{
+            bindings = <&kp QUESTION>;
             key-positions = <19 20 21 22>;
         };   
 
@@ -304,25 +304,25 @@
             bindings = <
   &none &kp W           &kp L            &kp R          &kp B            &kp Z            &kp Q              &kp U          &kp D         &kp J                &kp BACKSPACE         &none
   &none &kp S           &kp H            &kp N          &kp T            &kp COMMA        &kp DOT            &kp A          &kp E         &kp O                &kp I                 &none
-  &none &kp F           &kp M            &kp V          &kp C            &caps_word       &kp G              &kp P          &kp X         &kp K                &kp Y                 &none
-                                         &sk LSHIFT     &lt 1 ENTER      &sk LEFT_ALT     &kp LEFT_CONTROL   &lt 2 SPACE    &sk LEFT_COMMAND
+  &none &kp F           &kp M            &kp V          &kp C            &kp SLASH        &kp G              &kp P          &kp X         &kp K                &kp Y                 &none
+                                         &sk LSHIFT     &lt 1 ENTER      &mt LEFT_ALT TAB &mt LEFT_CONTROL ESC &lt 2 SPACE    &sk LEFT_COMMAND
             >;
         };
 
         symbols_1 {
             bindings = <
-  &none &kp F12         &kp F7           &kp F8         &kp F9           &bt BT_CLR        &kp BACKSPACE     &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9         &none                 &none
-  &none &kp F11         &kp F4           &kp F5         &kp F6           &bt BT_NXT        &kp SPACE         &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6         &kp DOT               &none
-  &none &kp F10         &kp F1           &kp F2         &kp F3           &none             &kp NUMBER_0      &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3         &kp COMMA             &none
-                                         &trans         &trans           &trans            &trans            &mo 3          &trans
-            >;
+  &none &kp F12         &kp F7           &kp F8         &kp F9           &kp SLASH         &kp ASTERISK      &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9         &kp BACKSPACE         &none
+  &none &kp F11         &kp F4           &kp F5         &kp F6           &none             &kp PLUS          &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6         &kp DOT               &none
+  &none &kp F10         &kp F1           &kp F2         &kp F3           &none             &kp MINUS         &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3         &kp COMMA             &none
+                                         &trans         &trans           &trans            &kp SPACE         &mo 3          &kp NUMBER_0
+            >; 
         };
 
         symbols_2 {
             bindings = <
  &none &kp CARET        &kp PIPE         &kp PERCENT    &kp DOLLAR       &none             &kp TILDE         &mkp LCLK      &mkp RCLK     &kp C_PLAY_PAUSE     &kp C_VOL_UP          &none
- &none &kp AT           &kp ASTERISK     &kp QUESTION   &kp EXCL         &none             &mmv MOVE_LEFT    &mmv MOVE_DOWN &mmv MOVE_UP  &mmv MOVE_RIGHT      &kp C_MUTE            &none
- &none &kp HASH         &kp AMPERSAND    &none          &none            &kp CAPSLOCK      &kp GRAVE         &none          &none         &none                &kp C_VOLUME_DOWN     &none
+ &none &kp AT           &none            &none          &none            &kp CAPSLOCK      &mmv MOVE_LEFT    &mmv MOVE_DOWN &mmv MOVE_UP  &mmv MOVE_RIGHT      &kp C_MUTE            &none
+ &none &kp HASH         &kp AMPERSAND    &none          &none            &caps_word        &kp GRAVE         &none          &none         &none                &kp C_VOLUME_DOWN     &none
                                          &trans         &mo 3            &trans            &trans            &trans         &trans
             >;
         };
@@ -331,7 +331,7 @@
             bindings = <
   &none &com_tab        &none            &opt_lctrl     &opt_com_lctrl   &opt_cmd_f        &kp HOME          &kp PAGE_UP    &kp PAGE_DOWN &kp END              &com_grave            &none
   &none &opt_com_larrow &kp LEFT_ALT     &kp LEFT_SHIFT &kp LEFT_COMMAND &com_enter        &kp LEFT_ARROW    &kp DOWN_ARROW &kp UP_ARROW  &kp RIGHT_ARROW      &opt_com_rarrow       &none
-  &none &none           &none            &none          &none            &none             &none             &mc_1          &mc_2	  &mc_3                &mc_4                 &none
+  &none &none           &none            &none          &none            &none             &none             &mc_1          &mc_2	      &mc_3                &mc_4                 &none
                                          &trans         &trans           &trans            &trans            &trans         &trans
             >;
         };
