@@ -257,22 +257,22 @@
 	
         colon {
             bindings = <&kp COLON>;
-            key-positions = <20 21 22>;
+            key-positions = <18 19 20>;
         };
 	
 	semicolon {
             bindings = <&kp SEMICOLON>;
-            key-positions = <13 14 15>;
+            key-positions = <15 16 17>;
         };
 	
 	opt_backspace{
             bindings = <&option_backspace>;
-            key-positions = <13 14>;
+            key-positions = <13 14 15>;
         };
  	
 	opt_delete{
             bindings = <&option_delete>;
-            key-positions = <21 22>;
+            key-positions = <20 21 22>;
         };
 
 	backslash{
@@ -285,13 +285,13 @@
             key-positions = <31 32 33 34>;
         };   
 
-    exclamation{
-            bindings = <&kp EXCL>;
+    	question{
+            bindings = <&kp QUESTION>;
             key-positions = <13 14 15 16>;
         };   
 
-    question{
-            bindings = <&kp QUESTION>;
+   	 exclamation{
+            bindings = <&kp EXCL>;
             key-positions = <19 20 21 22>;
         };   
 
