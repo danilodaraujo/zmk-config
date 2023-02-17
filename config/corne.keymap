@@ -247,12 +247,12 @@
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <25 26 27>;
+            key-positions = <32 33 34>;
         };
 	
 	semicolon {
             bindings = <&kp SEMICOLON>;
-            key-positions = <32 33 34>;
+            key-positions = <25 26 27>;
         };
 	
 	opt_backspace{
