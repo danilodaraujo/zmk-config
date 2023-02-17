@@ -245,24 +245,14 @@
             key-positions = <2 3 4>;
         };
 
-        single_quote {
-            bindings = <&kp SINGLE_QUOTE>;
+        semicolon {
+            bindings = <&kp SEMICOLON>;
             key-positions = <25 26 27>;
         };
 	
-	double_quote {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <32 33 34>;
-        };
-	
-        colon {
+	colon {
             bindings = <&kp COLON>;
-            key-positions = <18 19 20>;
-        };
-	
-	semicolon {
-            bindings = <&kp SEMICOLON>;
-            key-positions = <15 16 17>;
+            key-positions = <32 33 34>;
         };
 	
 	opt_backspace{
