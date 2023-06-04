@@ -365,8 +365,8 @@
             bindings = <
                 &none &com_tab        &none            &opt_lctrl     &opt_com_lctrl   &opt_cmd_f        &kp HOME          &kp PAGE_UP    &kp PAGE_DOWN &kp END              &com_grave            &none
                 &none &opt_com_larrow &kp LEFT_ALT     &kp LEFT_SHIFT &kp LEFT_COMMAND &com_enter        &kp LEFT_ARROW    &kp DOWN_ARROW &kp UP_ARROW  &kp RIGHT_ARROW      &opt_com_rarrow       &none
-                &none &none           &none            &none          &none            &none             &none             &mc_1          &mc_2	      &mc_3                &mc_4                 &none
-                                                        &trans         &trans           &trans            &trans            &trans         &trans
+                &none &command_1      &command_2       &command_3     &command_4       &none             &none             &mc_1          &mc_2	        &mc_3                &mc_4                 &none
+                                                       &trans         &trans           &trans            &trans            &trans         &trans
             >;
         };
 
