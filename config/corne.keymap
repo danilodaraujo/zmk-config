@@ -348,7 +348,7 @@
                 &none &kp F12         &kp F7           &kp F8         &kp F9           &none             &kp PLUS          &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9         &kp DOT               &none
                 &none &kp F11         &kp F4           &kp F5         &kp F6           &none             &kp SPACE         &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6         &kp BACKSPACE         &none
                 &none &kp F10         &kp F1           &kp F2         &kp F3           &none             &kp MINUS         &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3         &kp COMMA             &none
-                                         &trans         &trans           &trans            &kp ASTERISK      &mo 3          &kp NUMBER_0
+                                                       &trans           &trans         &trans           &kp ASTERISK       &mo 3          &kp NUMBER_0
             >; 
         };
 
@@ -363,7 +363,7 @@
 
         navigation_3 {
             bindings = <
-                &none &com_tab        &none            &opt_lctrl     &opt_com_lctrl   &opt_cmd_f        &kp HOME          &kp PAGE_UP    &kp PAGE_DOWN &kp END              &com_grave            &none
+                &none &com_tab        &none            &opt_lctrl     &opt_com_lctrl   &opt_cmd_f        &kp HOME          &kp PAGE_DOWN  &kp PAGE_UP   &kp END              &com_grave            &none
                 &none &opt_com_larrow &kp LEFT_ALT     &kp LEFT_SHIFT &kp LEFT_COMMAND &com_enter        &kp LEFT_ARROW    &kp DOWN_ARROW &kp UP_ARROW  &kp RIGHT_ARROW      &opt_com_rarrow       &none
                 &none &command_1      &command_2       &command_3     &command_4       &none             &none             &mc_1          &mc_2	        &mc_3                &mc_4                 &none
                                                        &trans         &trans           &trans            &trans            &trans         &trans
@@ -375,7 +375,7 @@
                 &none &none           &none            &none          &none            &none             &none             &none          &none         &none                &none                 &none
                 &none &none           &none            &none          &none            &none             &none             &none          &none         &none                &none                 &none
                 &none &none           &none            &none          &none            &none             &none             &none          &none         &none                &none                 &none
-                                                        &trans         &trans           &trans            &trans            &trans         &trans
+                                                       &trans         &trans           &trans            &trans            &trans         &trans
             >;
         };
     };
