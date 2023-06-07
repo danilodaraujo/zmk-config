@@ -339,24 +339,24 @@
                 &none &kp Q           &kp W            &kp E          &kp R            &kp T            &kp Y              &kp U          &kp I         &kp O                &kp P                 &none
                 &none &kp A           &kp S            &kp D          &kp F            &kp G            &kp H              &kp J          &kp K         &kp L                &kp BACKSPACE         &none
                 &none &kp Z           &kp X            &kp C          &kp V            &kp B            &kp N              &kp M          &kp COMMA     &kp DOT              &kp SINGLE_QUOTE      &none
-                                                       &sk LSHIFT     &lt 1 ENTER      &mt LEFT_ALT TAB &mt LEFT_CONTROL ESC &lt 2 SPACE    &sk LEFT_COMMAND
+                                                       &sk LSHIFT     &lt 1 ENTER      &mt LEFT_ALT TAB &mt LEFT_CONTROL ESC &lt 2 SPACE  &sk LEFT_COMMAND
             >;
         };
 
         symbols_1 {
             bindings = <
-                &none &kp F12         &kp F7           &kp F8         &kp F9           &none             &kp PLUS          &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9         &kp DOT               &none
-                &none &kp F11         &kp F4           &kp F5         &kp F6           &none             &kp SPACE         &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6         &kp BACKSPACE         &none
-                &none &kp F10         &kp F1           &kp F2         &kp F3           &none             &kp MINUS         &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3         &kp COMMA             &none
-                                                       &trans           &trans         &trans           &kp ASTERISK       &mo 3          &kp NUMBER_0
+                &none &kp F12         &kp F7           &kp F8         &kp F9           &none             &kp ASTERISK      &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9         &none                 &none
+                &none &kp F11         &kp F4           &kp F5         &kp F6           &none             &kp DOT           &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6         &kp BACKSPACE         &none
+                &none &kp F10         &kp F1           &kp F2         &kp F3           &none             &kp COMMA         &kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3         &none                 &none
+                                                       &trans         &trans           &trans            &kp SPACE         &mo 3          &kp NUMBER_0
             >; 
         };
 
         symbols_2 {
             bindings = <
-                &none &kp CARET        &kp AT           &kp HASH       &kp DOLLAR       &kp PERCENT       &kp TILDE         &kp AMPERSAND  &kp ASTERISK  &kp GRAVE            &kp C_VOL_UP          &none
-                &none &none            &none            &kp CAPSLOCK   &caps_word       &none             &mmv MOVE_LEFT    &mmv MOVE_DOWN &mmv MOVE_UP  &mmv MOVE_RIGHT      &kp C_MUTE            &none
-                &none &none            &none            &none          &none            &none             &none             &mkp LCLK      &mkp RCLK     &kp C_PLAY_PAUSE     &kp C_VOLUME_DOWN     &none
+                &none &kp CARET        &kp AT           &kp HASH       &kp DOLLAR       &kp PERCENT       &kp TILDE         &kp AMPERSAND  &kp ASTERISK  &kp GRAVE            &kp PIPE              &none
+                &none &none            &none            &kp CAPSLOCK   &caps_word       &none             &mmv MOVE_LEFT    &mmv MOVE_DOWN &mmv MOVE_UP  &mmv MOVE_RIGHT      &none                 &none
+                &none &kp C_MUTE       &kp C_VOLUME_DOWN&kp C_VOLUME_UP&kp C_PLAY_PAUSE &none             &none             &mkp LCLK      &mkp RCLK     &none                &none                 &none
                                                         &trans         &mo 3            &trans            &trans            &trans         &trans
             >;
         };
