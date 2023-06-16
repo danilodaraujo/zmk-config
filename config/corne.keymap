@@ -165,7 +165,7 @@
             bindings =
                 <&macro_press &kp LEFT_COMMAND &kp LSHIFT>,
                 <&macro_tap &kp A>,
-                <&macro_release LEFT_COMMAND &kp LSHIFT>;
+                <&macro_release &kp LEFT_COMMAND &kp LSHIFT>;
         };
 
         mc_1: mc_1 {
