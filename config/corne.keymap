@@ -31,7 +31,7 @@
             compatible = "zmk,behavior-macro";
             label = "option_backspace";
             #binding-cells = <0>;
-            wait-ms = <1>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_ALT>,
                 <&macro_tap &kp BACKSPACE>,
@@ -42,7 +42,7 @@
             compatible = "zmk,behavior-macro";
             label = "option_delete";
             #binding-cells = <0>;
-	        wait-ms = <1>;
+	        wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_ALT>,
                 <&macro_tap &kp DELETE>,
@@ -53,7 +53,7 @@
             compatible = "zmk,behavior-macro";
             label = "command_backspace";
             #binding-cells = <0>;
-            wait-ms = <1>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_COMMAND>,
                 <&macro_tap &kp BACKSPACE>,
@@ -64,7 +64,7 @@
             compatible = "zmk,behavior-macro";
             label = "command_delete";
             #binding-cells = <0>;
-            wait-ms = <1>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_COMMAND>,
                 <&macro_tap &kp DELETE>,
@@ -75,7 +75,7 @@
             compatible = "zmk,behavior-macro";
             label = "com_tab";
             #binding-cells = <0>;
-            wait-ms = <1>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_COMMAND>,
                 <&macro_tap &kp TAB>,
@@ -106,7 +106,7 @@
             compatible = "zmk,behavior-macro";
             label = "opt_cmd_f";
             #binding-cells = <0>;
-            wait-ms = <1>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_ALT &kp LEFT_COMMAND>,
                 <&macro_tap &kp F>,
@@ -117,7 +117,7 @@
             compatible = "zmk,behavior-macro";
             label = "opt_com_larrow";
             #binding-cells = <0>;
-            wait-ms = <1>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_ALT &kp LEFT_COMMAND>,
                 <&macro_tap &kp LEFT_ARROW>,
@@ -128,7 +128,7 @@
             compatible = "zmk,behavior-macro";
             label = "com_enter";
             #binding-cells = <0>;
-            wait-ms = <1>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_COMMAND>,
                 <&macro_tap &kp ENTER>,
@@ -139,7 +139,7 @@
             compatible = "zmk,behavior-macro";
             label = "com_grave";
             #binding-cells = <0>;
-            wait-ms = <1>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_COMMAND>,
                 <&macro_tap &kp GRAVE>,
@@ -150,7 +150,7 @@
             compatible = "zmk,behavior-macro";
             label = "opt_com_rarrow";
             #binding-cells = <0>;
-            wait-ms = <1>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_ALT &kp LEFT_COMMAND>,
                 <&macro_tap &kp RIGHT_ARROW>,
@@ -161,7 +161,7 @@
             compatible = "zmk,behavior-macro";
             label = "cmd_shift_a";
             #binding-cells = <0>;
-            wait-ms = <1>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_COMMAND &kp LSHIFT>,
                 <&macro_tap &kp A>,
@@ -172,7 +172,7 @@
             compatible = "zmk,behavior-macro";
             label = "mc_1";
             #binding-cells = <0>;
-            wait-ms = <1>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_COMMAND &kp LSHIFT>,
                 <&macro_tap &kp F1>,
@@ -183,7 +183,7 @@
             compatible = "zmk,behavior-macro";
             label = "mc_2";
             #binding-cells = <0>;
-            wait-ms = <1>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_COMMAND &kp LSHIFT>,
                 <&macro_tap &kp F2>,
@@ -194,7 +194,7 @@
             compatible = "zmk,behavior-macro";
             label = "mc_3";
             #binding-cells = <0>;
-            wait-ms = <1>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_COMMAND &kp LSHIFT>,
                 <&macro_tap &kp F3>,
@@ -205,7 +205,7 @@
             compatible = "zmk,behavior-macro";
             label = "mc_4";
             #binding-cells = <0>;
-            wait-ms = <1>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_COMMAND &kp LSHIFT>,
                 <&macro_tap &kp F4>,
@@ -216,7 +216,7 @@
             compatible = "zmk,behavior-macro";
             label = "command_1";
             #binding-cells = <0>;
-            wait-ms = <1>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_COMMAND>,
                 <&macro_tap &kp NUMBER_1>,
@@ -227,7 +227,7 @@
             compatible = "zmk,behavior-macro";
             label = "command_2";
             #binding-cells = <0>;
-            wait-ms = <1>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_COMMAND>,
                 <&macro_tap &kp NUMBER_2>,
@@ -238,7 +238,7 @@
             compatible = "zmk,behavior-macro";
             label = "command_3";
             #binding-cells = <0>;
-            wait-ms = <1>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_COMMAND>,
                 <&macro_tap &kp NUMBER_3>,
@@ -249,7 +249,7 @@
             compatible = "zmk,behavior-macro";
             label = "command_4";
             #binding-cells = <0>;
-            wait-ms = <1>;
+            wait-ms = <0>;
             bindings =
                 <&macro_press &kp LEFT_COMMAND>,
                 <&macro_tap &kp NUMBER_4>,
