@@ -168,15 +168,24 @@
                 <&macro_release &kp LEFT_COMMAND &kp LSHIFT>;
         };
 
-cmd_shift_p: cmd_shift_p {
-            compatible = "zmk,behavior-macro";
-            label = "cmd_shift_p";
-            #binding-cells = <0>;
-            wait-ms = <0>;
-            bindings =
-                <&macro_press &kp LEFT_COMMAND &kp LSHIFT>,
-                <&macro_tap &kp P>,
-                <&macro_release &kp LEFT_COMMAND &kp LSHIFT>;
+	cmd_shift_p: cmd_shift_p {
+	            compatible = "zmk,behavior-macro";
+	            label = "cmd_shift_p";
+	            #binding-cells = <0>;
+	            wait-ms = <0>;
+	            bindings =
+	                <&macro_press &kp LEFT_COMMAND &kp LSHIFT>,
+	                <&macro_tap &kp P>,
+	                <&macro_release &kp LEFT_COMMAND &kp LSHIFT>;
+        };
+
+	forward_slash: forward_slash {
+		            compatible = "zmk,behavior-macro";
+		            label = "forward_slash";
+		            #binding-cells = <0>;
+		            wait-ms = <0>;
+		            bindings =
+		                <&macro_tap &kp SLASH>;
         };
 
         mc_1: mc_1 {
